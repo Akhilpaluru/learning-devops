@@ -1,4 +1,4 @@
-name: Day 8 Python Pipeline
+name: Day 9 Pipeline
 
 on: [push]
 
@@ -15,5 +15,11 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Run Python Script
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run App
         run: python app.py
+
+      - name: Run Tests
+        run: pytest

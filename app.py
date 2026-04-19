@@ -1,6 +1,6 @@
-print("Hello from DevOps Day 8 🚀")
+import requests
 
-def add(a, b):
-    return a + b
+print("Day 9 DevOps 🚀")
 
-print("Sum:", add(5, 3))
+response = requests.get("https://api.github.com")
+print("Status Code:", response.status_code)
