@@ -13,8 +13,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: check flies
+      - name: Run a simple command
+        run: echo "Hello, DevOps World!"
+
+      - name: check files
         run: ls -la
 
-
- 
+      - name: Debug step
+        run: |
+          echo "Pipeline started"
+          pwd
+          ls -la
