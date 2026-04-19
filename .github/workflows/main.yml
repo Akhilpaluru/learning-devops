@@ -24,3 +24,5 @@ jobs:
           echo "Pipeline started"
           pwd
           ls -la
+      - name: day 6 message
+        run: echo "Day 6 completed"
