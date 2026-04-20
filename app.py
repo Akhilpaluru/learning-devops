@@ -4,3 +4,6 @@ print("Day 9 DevOps 🚀")
 
 response = requests.get("https://api.github.com")
 print("Status Code:", response.status_code)
+
+def add(a, b):
+    return a + b
